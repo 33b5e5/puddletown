@@ -8,7 +8,7 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       <div class="entry">
         {{ post.content }}
-        <small>{% if post.tags.size > 0 %} tags: {{ post.tags | sort | join: ", " }} {% endif %} | <a href="{{ site.baseurl }}{{ post.url }}">permalink</a></small>
+        <small>{{ post.date | date: "%Y/%m/%d @ %R" }} | {% if post.tags.size > 0 %} tags: {{ post.tags | sort | join: ", " }} {% endif %} | <a href="{{ site.baseurl }}{{ post.url }}">permalink</a></small>
       </div>
       <br/><hr/><br/>
     </article>
