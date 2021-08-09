@@ -26,7 +26,7 @@
           {% endif %}
           {{ content }}
         </section>
-        <small>{% if post.tags.size > 0 %} tags: {{ post.tags | sort | join: ", " }}</small>
+        {% if post.tags.size > 0 %}<small>tags: {{ post.tags | sort | join: ", " }}</small>{% endif %}
       </div>
     </div>
   </body>
