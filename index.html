@@ -10,10 +10,10 @@ layout: default
         {{ post.content }}
         <small>
           {% if post.tags.size > 0 %}
-          Tags: {{ post.tags | sort | join: ", " }}
+          tags: {{ post.tags | sort | join: ", " }}
           {% endif %}
         </small></p>
-        <small><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y/%m/%d @ %R" }}</a> | <a href="{{ site.baseurl }}{{ post.url }}">permalink</a></small>
+        <small><a href="{{ site.baseurl }}{{ post.url }}">permalink</a></small>
       </div>
       <br/><hr/><br/>
     </article>
