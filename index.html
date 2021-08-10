@@ -10,9 +10,8 @@ layout: default
         {{ post.content }}
         <small>{{ post.date | date: "%Y-%m-%d" }} | 
           {% if post.tags.size > 0 %} 
-            tags: 
             {% for tag in post.tags %}
-              <a href="/tag/{{ tag }}"><code class="highligher-rouge"><nobr>{{ tag }}</nobr></code>&nbsp;</a>
+              <a href="/tag/{{ tag }}"><nobr>{{ tag }}</nobr>&nbsp;</a>
             {% endfor %} | 
           {% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">permalink</a>
