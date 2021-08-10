@@ -10,8 +10,12 @@ layout: default
         {{ post.content }}
         <small>{{ post.date | date: "%Y-%m-%d" }} | 
           {% if post.tags.size > 0 %} 
-            tags: {{ post.tags | sort | join: ", " }} | 
-          {% endif %} 
+            tags: 
+            {% for tag in page.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+            {% endfor %} | 
+          {% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">permalink</a>
         </small>
       </div>
