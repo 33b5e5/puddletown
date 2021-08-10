@@ -12,8 +12,8 @@ layout: default
           {% if post.tags.size > 0 %}
             tags: 
             {% for tag in post.tags %}
-              <a href="/tag/{{ tag }}"><nobr>{{ tag }}</nobr>&nbsp;</a>
-            {% endfor %}| 
+              <a href="/tag/{{ tag }}"><nobr>{{ tag }}</nobr></a>
+            {% endfor %} | 
           {% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">permalink</a>
         </small>
