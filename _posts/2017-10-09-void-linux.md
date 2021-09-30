@@ -2,6 +2,7 @@
 layout: default
 title: Void Linux
 date: 2017-10-09 15:22:23 -0700
+tags: linux
 ---
 
 I've been testing <a href="https://voidlinux.org/" target="_blank">Void Linux</a> recently, and thought I'd take a few minutes to write about my experience. Void is an independent, open source Linux distribution with a unique package manager and an init system written from scratch. The Github repo is <a href="https://github.com/void-linux" target="_blank">here</a>.
